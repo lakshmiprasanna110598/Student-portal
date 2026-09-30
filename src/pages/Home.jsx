@@ -1,5 +1,6 @@
-import Navbar from "../components/Navbar";
+import React from "react";
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 function Home() {
   return (
@@ -7,18 +8,21 @@ function Home() {
       <Navbar />
 
       <div className="home-container">
-        <h1>Welcome to Student Portal</h1>
+        <div className="home-content">
+          <h1>Welcome to Student Portal</h1>
 
-        <p>
-          Learn programming, explore courses, and manage your student profile.
-        </p>
+          <p>
+            Learn programming, explore courses, and manage your student profile.
+          </p>
 
-        <Link className="explore-link" to="/courses">
-          Explore Courses
-        </Link>
+          <Link to="/courses" className="explore-btn">
+            Explore Courses
+          </Link>
+        </div>
       </div>
     </>
   );
 }
 
 export default Home;
+

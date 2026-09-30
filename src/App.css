@@ -48,3 +48,35 @@
   text-align:center;
   border-radius:10px;
 }
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #f5f7fb;
+}
+
+.home-content {
+  width: 100%;
+  max-width: 800px;
+}
+
+.home-content h1 {
+  margin-bottom: 15px;
+  font-size: 42px;
+}
+
+.home-content p {
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.explore-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}

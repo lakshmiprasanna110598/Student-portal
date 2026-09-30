@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
 function Profile() {
@@ -11,9 +12,13 @@ function Profile() {
         <p>Manage your student account.</p>
 
         <div className="dashboard-links">
-          <a href="/dashboard">Overview</a>
-          <a href="/dashboard/profile">Profile</a>
-          <a href="/dashboard/settings">Settings</a>
+          <Link to="/dashboard">Overview</Link>
+
+          <Link className="active-link" to="/dashboard/profile">
+            Profile
+          </Link>
+
+          <Link to="/dashboard/settings">Settings</Link>
         </div>
 
         <h2>My Profile</h2>

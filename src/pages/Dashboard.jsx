@@ -12,9 +12,17 @@ function Dashboard() {
         <p>Manage your student account.</p>
 
         <div className="dashboard-links">
-          <Link className="active-link" to="/dashboard">Overview</Link>
-          <Link to="/dashboard/profile">Profile</Link>
-          <Link to="/dashboard/settings">Settings</Link>
+          <Link className="active-link" to="/dashboard">
+            Overview
+          </Link>
+
+          <Link to="/dashboard/profile">
+            Profile
+          </Link>
+
+          <Link to="/dashboard/settings">
+            Settings
+          </Link>
         </div>
 
         <div className="dashboard-overview-box">

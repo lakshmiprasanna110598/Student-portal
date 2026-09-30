@@ -4,8 +4,7 @@ function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const isLoginPage =
-    location.pathname === "/" || location.pathname === "/login";
+const isLoginPage = location.pathname === "/login";
 
   const handleLogout = () => {
     localStorage.removeItem("isLoggedIn");
